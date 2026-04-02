@@ -148,7 +148,7 @@ export default function App() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center">
               <Button pulse={true} className="w-full sm:w-auto text-lg px-10">
-                Quero Organizar Meu Coral por R$ 24,99
+                Quero Organizar Meu Coral por R$ 14,99/mês
               </Button>
             </div>
             
@@ -326,7 +326,7 @@ export default function App() {
                 step: "01",
                 title: "Busque ou Cole",
                 desc: "Encontre a música em nossa base global ou simplesmente cole a letra. O Regentify identifica a estrutura musical na hora.",
-                img: "https://picsum.photos/seed/step1/600/400"
+                img: "https://tlgagenciadigital.com.br/wp-content/uploads/2026/03/meu-site-na-busca-organica-do-google.jpg"
               },
               {
                 step: "02",
@@ -378,13 +378,20 @@ export default function App() {
                 Pastas e impressões custam centenas de reais todos os meses.
               </p>
               <div className="inline-block px-6 py-2 bg-purple-500/10 text-purple-400 rounded-full text-sm font-bold uppercase tracking-widest mb-8">
-                Acesso Vitalício - Oferta Especial
+                Escolha seu plano: Mensal ou Anual
               </div>
-              <div className="flex items-center justify-center gap-2">
-                <span className="text-2xl font-bold text-slate-400 mt-4">R$</span>
-                <span className="text-7xl md:text-9xl font-black text-white tracking-tighter">24,99</span>
+              <div className="flex flex-col md:flex-row gap-4 justify-center mb-8">
+                <Button pulse={true} className="w-full md:w-auto text-xl py-6" variant="primary">
+                  <Lock className="w-5 h-5 mr-2" /> Assinar Mensal R$ 14,99/mês
+                </Button>
+                <div className="relative w-full md:w-auto">
+                  <Button pulse={true} className="w-full md:w-auto text-xl py-6 border-2 border-yellow-400/80 ring-2 ring-yellow-300/40" variant="secondary">
+                    <Lock className="w-5 h-5 mr-2" /> Assinar Anual R$ 120,00/ano
+                  </Button>
+                  <span className="absolute -top-3 right-2 bg-yellow-400 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full shadow-lg border border-yellow-300 animate-bounce">Economize 33%</span>
+                </div>
               </div>
-              <p className="text-slate-500 mt-4 font-medium">Pagamento único. Sem mensalidades para sempre.</p>
+          
             </div>
 
             <div className="grid md:grid-cols-2 gap-6 mb-12 text-left max-w-lg mx-auto">
@@ -394,7 +401,6 @@ export default function App() {
                 "Modo Apresentação",
                 "Kit do Regente Completo",
                 "Suporte Musical VIP",
-                "Acesso Vitalício"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 text-slate-300">
                   <CheckCircle2 className="w-5 h-5 text-purple-500 shrink-0" />
@@ -403,17 +409,11 @@ export default function App() {
               ))}
             </div>
 
-            <Button pulse={true} className="w-full text-2xl py-8 mb-8">
-              <Lock className="w-6 h-6" /> QUERO ORGANIZAR MEU CORAL
-            </Button>
+    
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-12 pt-8 border-t border-white/5">
               <div className="flex items-center gap-3">
                 <ShieldCheck className="w-10 h-10 text-purple-500" />
-                <div className="text-left">
-                  <div className="text-sm font-bold text-white">Garantia de 7 Dias</div>
-                  <div className="text-xs text-slate-500">Satisfação ou seu dinheiro de volta</div>
-                </div>
               </div>
               <div className="flex items-center gap-3">
                 <div className="flex text-yellow-500">
@@ -445,8 +445,8 @@ export default function App() {
               answer="Com certeza! O gerador de PDF cria arquivos profissionais e leves que você pode enviar via WhatsApp, e-mail ou imprimir para quem ainda prefere o papel."
             />
             <FAQItem 
-              question="O pagamento de R$ 24,99 é mensal?"
-              answer="Não! Esta é uma oferta de acesso vitalício. Você paga apenas uma vez e tem direito a todas as funcionalidades e atualizações futuras do Regentify sem nunca mais pagar nada."
+              question="O pagamento de R$ 14,99 é mensal?"
+              answer="Sim! Agora o Regentify funciona por assinatura mensal. Você paga R$ 14,99 por mês e pode cancelar quando quiser."
             />
           </div>
         </div>
