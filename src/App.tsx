@@ -496,22 +496,20 @@ export default function App() {
                 Escolha seu plano: Mensal ou Anual
               </div>
               <div className="flex flex-col md:flex-row gap-4 justify-center mb-8">
+                <Button
+                pulse={true}
+                className="w-full md:w-auto text-xl py-6"
+                variant="secondary"
+                target="_self"
+                onClick={() => {
+                  window.location.href =
+                    "https://andreconstrutoria.pay.yampi.com.br/r/CZSPA3RXK8";
+                }}
+              >
+                Assinar Mensal R$ 14,99/mês
+              </Button>
                 <a
-                  href="https://andreconstrutoria.catalog.yampi.io/regentify-app/p"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button
-                    pulse={true}
-                    className="w-full md:w-auto text-xl py-6"
-                    variant="primary"
-                  >
-                    <Lock className="w-5 h-5 mr-2" /> Assinar Mensal R$
-                    14,99/mês
-                  </Button>
-                </a>
-                <a
-                  href="https://andreconstrutoria.pay.yampi.com.br/r/CZSPA3RXK8"
+                  href="https://andreconstrutoria.catalog.yampi.io/regentify-app-anual/p"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
