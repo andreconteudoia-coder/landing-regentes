@@ -503,14 +503,14 @@ export default function App() {
                 target="_self"
                 onClick={() => {
                   window.location.href =
-                    "https://andreconstrutoria.pay.yampi.com.br/r/CZSPA3RXK8";
+                    "https://andreconstrutoria.pay.yampi.com.br/r/FGHL9RKS6Z";
                 }}
               >
                 Assinar Mensal R$ 14,99/mês
               </Button>
                 <a
-                  href="https://andreconstrutoria.catalog.yampi.io/regentify-app-anual/p"
-                  target="_blank"
+                  href="https://andreconstrutoria.pay.yampi.com.br/r/CZSPA3RXK8"
+                   target="_self"
                   rel="noopener noreferrer"
                 >
                   <Button
