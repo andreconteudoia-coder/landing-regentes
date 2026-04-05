@@ -435,13 +435,13 @@ export default function App() {
                 step: "02",
                 title: "Prepare o Kit",
                 desc: "Adicione os áudios de ensaio e suas anotações técnicas de dinâmica e tempo para cada música.",
-                img: "kit.png",
+                img: "./src/images/kit.png",
               },
               {
                 step: "03",
                 title: "Reja com Maestria",
                 desc: "Use o Modo Apresentação no ensaio ou gere PDFs profissionais para todo o coral em segundos.",
-                img: "pdf.png",
+                img: "./src/images/pdf.png",
               },
             ].map((item, idx) => (
               <motion.div
