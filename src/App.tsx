@@ -179,9 +179,9 @@ export default function App() {
             >
               Preço
             </a>
-            <Button className="py-2 px-6 text-sm" variant="secondary">
+            {/* <Button className="py-2 px-6 text-sm" variant="secondary">
               Acessar Agora
-            </Button>
+            </Button> */}
           </div>
           <button className="md:hidden text-white">
             <Menu className="w-6 h-6" />
@@ -211,7 +211,11 @@ export default function App() {
               profissionais e tenha tudo pronto para o seu ensaio.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 items-center">
-              <Button pulse={true} className="w-full sm:w-auto text-lg px-10">
+              <Button pulse={true} className="w-full sm:w-auto text-lg px-10"
+              onClick={() => {
+                  window.location.href =
+                    "https://andreconstrutoria.pay.yampi.com.br/r/FGHL9RKS6Z";
+                }}>
                 Quero Organizar Meu Coral por R$ 14,99/mês
               </Button>
             </div>
@@ -499,7 +503,6 @@ export default function App() {
                 <Button
                 pulse={true}
                 className="w-full md:w-auto text-xl py-6"
-                variant="secondary"
                 target="_self"
                 onClick={() => {
                   window.location.href =
@@ -531,6 +534,7 @@ export default function App() {
                 "Modo Apresentação",
                 "Kit do Regente Completo",
                 "Suporte Musical VIP",
+                "Agenda de Compromissos"
               ].map((item, i) => (
                 <div key={i} className="flex items-center gap-3 text-slate-300">
                   <CheckCircle2 className="w-5 h-5 text-purple-500 shrink-0" />
@@ -552,9 +556,6 @@ export default function App() {
                 <div className="text-left">
                   <div className="text-sm font-bold text-white">
                     Aprovado por Maestros
-                  </div>
-                  <div className="text-xs text-slate-500">
-                    Nota 4.9/5 nas lojas
                   </div>
                 </div>
               </div>
